@@ -1,0 +1,11 @@
+<%- include('header.ejs') -%>
+
+<h2>Update Code Snippet</h2>
+
+<form action="/snippet/update/<%= text._id %>" method="post">
+    <label for="code">Code Snippet:</label>
+    <textarea id="code" name="code" rows="10" cols="50" required><%= text.code %></textarea>
+    <button type="submit">Update</button>
+</form>
+
+<%- include('footer.ejs') -%>

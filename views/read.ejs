@@ -1,0 +1,20 @@
+<%- include('header.ejs') -%>
+
+<%- include('flash.ejs') -%>
+
+<% if (texts.length === 0) { %>
+    <p>No code snippets available.</p>
+<% } else { %>
+    <% texts.forEach(snippet => { %>
+        <div class="snippet-box">
+            <div>Snippet created by: <strong><%= snippet.userId.username %></strong></div>
+            <pre class="snippet-code"><code><%= snippet.code %></code></pre>
+            <div class="snippet-actions">
+                <a href="/snippet/update/<%= snippet._id %>" class="snippet-button snippet-button-update">Update</a>
+                <a href="/snippet/delete/<%= snippet._id %>" class="snippet-button snippet-button-delete">Delete</a>
+            </div>
+        </div>
+    <% }) %>
+<% } %>
+
+<%- include('footer.ejs') -%>

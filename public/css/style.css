@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+nav {
+
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+footer {
+
+    text-align: left;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    margin: 20px 0;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    display: block;
+    margin: 10px 0;
+}
+
+.flash-message {
+    background-color: rgb(151, 75, 75);
+    color: white;
+    padding: 0.5em;
+    margin-bottom: 1rem;
+}
+
+
+.snippet-box {
+    width: 60%;
+    margin: auto;
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.snippet-code {
+    background-color: #eee;
+    padding: 10px;
+    margin: 18px 0;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.snippet-actions {
+    text-align: left;
+}
+
+.snippet-button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.snippet-button-delete {
+    background-color: #f44336;
+}
+
+.snippet-button-update {
+    background-color: #008CBA;
+}

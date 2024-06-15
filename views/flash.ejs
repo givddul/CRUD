@@ -1,0 +1,11 @@
+<% if (typeof flashMessage !== 'undefined' && flashMessage) { %>
+    <div class="flash-message" id="flashMessage"><%- flashMessage %></div>
+    <script>
+        setTimeout(function() {
+            var flashMessageDiv = document.getElementById('flashMessage');
+            if(flashMessageDiv) {
+                flashMessageDiv.style.display = 'none';
+            }
+        }, 3000);
+    </script>
+<% } %>
